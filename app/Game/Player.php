@@ -11,6 +11,10 @@ class Player
      */
     protected $name;
     /**
+     * @var int
+     */
+    protected $playerNumber;
+    /**
      * @var Vehicle
      */
     protected $vehicle;
@@ -19,9 +23,10 @@ class Player
      * @param string $name
      * @param Vehicle $vehicle
      */
-    public function __construct($name, $vehicle)
+    public function __construct($name, $vehicle, $playerNumber)
     {
         $this->name = $name;
+        $this->playerNumber = $playerNumber;
         $this->vehicle = $vehicle;
     }
 
@@ -39,6 +44,14 @@ class Player
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumber()
+    {
+        return $this->playerNumber;
     }
 
 

@@ -21,11 +21,11 @@ class Result
 
         $this->first = [
             'player' => $firstPlayer,
-            'record' => $firstRecord
+            'record' => (float)$firstRecord
         ];
         $this->second = [
             'player' => $secondPlayer,
-            'record' => $secondRecord
+            'record' => (float)$secondRecord
         ];
     }
 

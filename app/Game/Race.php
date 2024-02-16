@@ -29,6 +29,11 @@ class Race
         $this->distanceInKM = $distanceInKM;
     }
 
+    public function setDistance($distanceInKM)
+    {
+        $this->distanceInKM = $distanceInKM;
+    }
+
     public function calculateResult()
     {
         $p1Record = $this->player1->getVehicle()->calculateTravelTime($this->distanceInKM);
@@ -36,8 +41,7 @@ class Race
 
         if ($p1Record > $p2Record) {
             return new Result($this->player2, $this->player1, $p2Record, $p1Record);
-        }
-        else{
+        } else {
             return new Result($this->player1, $this->player2, $p1Record, $p2Record);
         }
 
