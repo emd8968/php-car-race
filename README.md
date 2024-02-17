@@ -3,7 +3,7 @@ savvy tech test task
 
 a simple two player racing game, each player selects a vehicle and starts the race
 
-#Installation
+# Installation
 
 first run following command:
 "composer install"
